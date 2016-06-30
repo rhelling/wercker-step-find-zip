@@ -29,8 +29,8 @@ steps:
         sudo apt-get upgrade -y
         sudo apt-get install -y zip
     - rhelling/zip
-        input: "dist/assets"
-        output: "dist/release.zip"
+        find: "dist/assets"
+        zipname: "dist/release.zip"
 ```
 
 ## Author:
