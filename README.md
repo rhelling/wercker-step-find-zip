@@ -12,11 +12,12 @@ In the `wercker.yml` of your application use the following step definition:
 ```yaml
 steps:
    - rhelling/find-zip:
+     path: ${WERCKER_ROOT}
      find: $WERCKER_OUTPUT_DIR/dist/assets
      zipname: $WERCKER_OUTPUT_DIR/release.zip
 ```
 
-You must set `find` to the directories you want to package are in and `output` directory where zip archeives will be generated. Both must be set as absolte path (`$WERCKER_OUTPUT_PATH` is built-in environmental valiable which is used for pass the artifacts between build step and deploy step). 
+You must set `path` to the path to execute find,  `find` to the directories you want to package are in and `zipname`  where zip archive will be generated. Both must be set as absolte path (`$WERCKER_OUTPUT_PATH` is built-in environmental valiable which is used for pass the artifacts between build step and deploy step). 
 
 ## Requirements
 
@@ -31,8 +32,9 @@ steps:
         sudo apt-get upgrade -y
         sudo apt-get install -y zip
     - rhelling/zip
-        find: "dist/assets"
-        zipname: "dist/release.zip"
+        path: "${WERCKER_ROOT}/dist"
+        find: "assets/{js,css}"
+        zipname: "release/release.zip"
 ```
 
 ## Author:
