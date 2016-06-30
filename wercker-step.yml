@@ -1,0 +1,12 @@
+name: find-zip
+version: 0.0.1
+description: package found files as .zip
+kyewords:
+  - package
+properties:
+    find:
+      type: string
+      required: true
+    zipname:
+      type: string
+      required: true

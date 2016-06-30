@@ -1,0 +1,4 @@
+box: node
+build:
+  steps:
+    - validate-wercker-step
