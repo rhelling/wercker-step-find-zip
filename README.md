@@ -1,6 +1,8 @@
 Wercker step find zip [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/tcnksm/wercker-step-zip/blob/master/LICENCE)
 ====
 
+[![wercker status](https://app.wercker.com/status/5774c9ca84206a995f16a4c3/m "wercker status")](https://app.wercker.com/project/bykey/5774c9ca84206a995f16a4c3)
+
 This is [wercker](http://wercker.com/) build step script to package your directories as `.zip`. 
 
 ## Usage
